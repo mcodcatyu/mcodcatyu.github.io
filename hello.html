@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox 範例</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;      /* 水平排列 */
+      justify-content: space-between; /* 兩端對齊，中間間隔平均 */
+      align-items: center;      /* 垂直置中 */
+      height: 120px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    .container > div {
+      width: 100px;
+      height: 60px;
+      background-color: #6ab04c;
+      color:;
+      font-weight: bold;
+      text-align: center;
+      line-height: 60px; /* 垂直置中文字 */
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>區塊 1</div>
+    <div>區塊 2</div>
+    <div>區塊 3</div>
+  </div>
+</body>
+</html>
